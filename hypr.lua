@@ -136,4 +136,8 @@ o.bind("SUPER + ALT + H", "Unhide last window", function()
   unhide_last()
 end)
 
+hl.on("window.close", write_hidden)
+hl.on("window.destroy", write_hidden)
+hl.on("window.move_to_workspace", write_hidden)
+
 write_hidden()

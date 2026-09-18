@@ -110,5 +110,15 @@ BarWidget {
   }
 
   onWorkspaceIdChanged: rebuild()
+
+  Connections {
+    target: Hyprland
+    function onRawEvent(event) {
+      var n = event && event.name ? String(event.name) : ""
+      if (n === "closewindow" || n === "openwindow" || n === "movewindow" || n === "movewindowv2")
+        hideFile.reload()
+    }
+  }
+
   Component.onCompleted: hideFile.reload()
 }
