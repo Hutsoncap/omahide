@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "omahide",
+  "name": "Omahide",
+  "version": "1.0.0",
+  "author": "Hutson",
+  "license": "MIT",
+  "description": "Super+H hides the focused window; its icon sits on the bar for that workspace until you click it.",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "BarWidget.qml" },
+  "barWidget": {
+    "displayName": "Omahide",
+    "description": "Workspace-scoped hidden window icons. Super+H hides; click restores.",
+    "category": "Compositor",
+    "allowMultiple": false,
+    "defaultSection": "left"
+  }
+}
