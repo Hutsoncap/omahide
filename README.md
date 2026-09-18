@@ -2,6 +2,8 @@
 
 Hide windows with Super+H. An icon appears on the Omarchy bar for that workspace. Click it to restore. Super+H does not toggle.
 
+![Omahide bar icons](preview.png)
+
 ## Install
 
 ```sh
